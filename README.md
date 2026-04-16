@@ -40,11 +40,13 @@ web-kalkulator/
    ```bash
    cd web-kalkulator
    ```
-3. Open `index.html` in your browser to use the calculator.
+3. npm run build
+
+4. Open `[Localhost](http://localhost:3000/)` in your browser to use the calculator.
 
 ## Websites
 Netlify:
-
+[webkalkulator](webkalkulator1.netlify.app)
 
 
 ## Testing

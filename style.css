@@ -10,35 +10,39 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #333;
+    background: #1a1a1a;
+    background-image: radial-gradient(#333 10%, transparent 10%);
+    background-size: 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
     padding: 20px;
 }
 
 /* Enhanced container styles */
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
     gap: 20px;
     justify-content: center;
+    width: 100%;
 }
 
 /* Individual box styles */
 .box {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #000;
+    border: 3px solid #00ff00;
+    border-radius: 0;
+    box-shadow: 5px 5px 0px #005500;
     padding: 20px;
     width: 100%;
     max-width: 300px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
 .box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px #00ff00;
 }
 
 .box form {
@@ -49,36 +53,43 @@ body {
 
 .box input, .box button {
     padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-size: 1.1em;
+    font-family: inherit;
+    border: 2px solid #00ff00;
+    border-radius: 0;
+    background: #000;
+    color: #00ff00;
+    outline: none;
 }
 
 .box button {
-    background: #667eea;
-    color: white;
+    background: #00ff00;
+    color: #000;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s;
+    text-transform: uppercase;
 }
 
 .box button:hover {
-    background: #764ba2;
+    background: #000;
+    color: #00ff00;
 }
 
 /* Enhanced result box styles */
 .result-box {
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    background: #000;
+    border: 1px dashed #00ff00;
+    border-radius: 0;
     padding: 15px;
     margin-top: 10px;
     font-size: 1.1em;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #00ff00;
     text-align: center;
+    text-shadow: 0 0 5px #00ff00;
 }
 
 .result-box span {
     font-weight: bold;
-    color: #667eea;
+    color: #00ff00;
+    text-decoration: underline;
 }

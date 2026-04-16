@@ -1,0 +1,19 @@
+{
+  "name": "web-kalkulator",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "build": "npm install nodemon express"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
